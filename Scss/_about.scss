@@ -1,9 +1,7 @@
 .about {
   padding-bottom: 2rem;
 
-  &_bio-image {
-    height: 75vh;
-    width: 100%;
+  
 
     background: linear-gradient(
         to right,
@@ -35,7 +33,7 @@
       padding-bottom: 1rem;
     }
 
-    
+
   }
 
   .jobs {
@@ -70,4 +68,4 @@
   .footer {
     transform: rotate(90deg) translate(-3rem -5rem);
   }
-}
+
