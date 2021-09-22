@@ -1,3 +1,11 @@
+@include media-xs{
+   .projects {
+        &_bio-image {
+            height: 50vh;
+            width: 25%
+        }
+}
+
 @include media-md {
     .menu-btn {
         visibility: hidden;
@@ -66,4 +74,5 @@
     }
 
     
+}
 }
