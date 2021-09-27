@@ -174,15 +174,9 @@
 }
 
 .about {
-  padding-bottom: 2rem;
-}
-
-.about_bio-image {
-  height: 75vh;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(39, 39, 39, 0.8)), to(rgba(39, 39, 39, 0.7))), url("../img/about.jpg") center;
-  background: linear-gradient(to right, black, rgba(39, 39, 39, 0.8), rgba(39, 39, 39, 0.7)), url("../img/about.jpg") center;
-  background-size: cover;
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,55 +187,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(39, 39, 39, 0.8)), to(rgba(39, 39, 39, 0.7))), url("../img/about.jpg") center;
+  background: linear-gradient(to right, black, rgba(39, 39, 39, 0.8), rgba(39, 39, 39, 0.7)), url("../img/about.jpg") center;
+  background-size: cover;
 }
 
-.about_bio-image p {
+.about p {
   margin-bottom: 1rem;
 }
 
-.about_bio-image span {
+.about span {
   color: #ff652f;
 }
 
+.about_paragraph {
+  line-height: 45px;
+  font-size: larger;
+}
+
 .about_bio {
-  width: 100%;
   text-align: center;
-}
-
-.about_bio .text-secondary {
-  padding-bottom: 1rem;
-}
-
-.about .jobs {
-  width: 70vw;
-  margin: 2rem auto 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
-
-.about .jobs_job {
-  background: #414141;
-  padding: 0.5rem;
-  border-bottom: 3px solid #ff652f;
-}
-
-.about .jobs_job h2, .about .jobs_job h3 {
-  margin: 1rem, 0;
-  padding: 5px;
-}
-
-.about .jobs_job h5 {
-  margin: 0.5rem, 0;
-  padding-bottom: 3px;
-}
-
-.about .social-icons {
+  font-size: 40px;
+  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,9 +218,13 @@
           flex-direction: column;
 }
 
-.about .footer {
-  -webkit-transform: rotate(90deg) translate(-3rem -5rem);
-          transform: rotate(90deg) translate(-3rem -5rem);
+.about_bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .social-icons {
+  position: bottom;
+  margin-top: 2rem;
 }
 
 .projects {

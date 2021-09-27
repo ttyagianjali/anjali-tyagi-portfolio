@@ -1,9 +1,13 @@
 .about {
-  padding-bottom: 2rem;
+   height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  
-
-    background: linear-gradient(
+    
+        background: linear-gradient(
         to right,
         rgba(black, 1),
         rgba($primary-color, 0.8),
@@ -11,10 +15,6 @@
       ),
       url("../img/about.jpg") center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
 
     p {
       margin-bottom: 1rem;
@@ -23,11 +23,19 @@
     span {
       color: $secondary-color;
     }
-  }
+
+    &_paragraph{
+      line-height: 45px;
+      font-size: larger;
+    }
+  
   &_bio {
-    width: 100%;
+    
     text-align: center;
     font-size: 40px;
+    overflow: scroll;
+    display: flex;
+        flex-direction: column;
 
     .text-secondary {
       padding-bottom: 1rem;
@@ -36,36 +44,9 @@
 
   }
 
-  .jobs {
-    width: 70vw;
-    margin: 2rem auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-
-    &_job {
-      background: lighten($primary-color, 10%);
-      padding: 0.5rem;
-      border-bottom: 3px solid $secondary-color;
-
-      h2,
-      h3 {
-        margin: 1rem, 0;
-        padding: 5px;
-      }
-      h5 {
-        margin: 0.5rem, 0;
-        padding-bottom: 3px;
-      }
+    .social-icons {
+        position: bottom;
+        margin-top: 2rem;
     }
-  }
-
-  .social-icons {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer {
-    transform: rotate(90deg) translate(-3rem -5rem);
   }
 
